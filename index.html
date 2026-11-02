@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shri Ranganath Swami Co-operative Credit Society</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-links">
+                    <a href="#">Branches</a>
+                    <a href="interest-rates.html">Interest Rates</a>
+                    <a href="#notices">Notices</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Help & Support</a>
+
+                    <a href="#" class="login-link">
+                        <i class="fa-regular fa-user"></i>
+                        Member Login
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="main-navbar">
+            <div class="container navbar-container">
+                <!-- Logo and Society Name -->
+                <a href="index.html" class="brand">
+                    <img src="Images/logo.png" alt="Society Logo">
+                    <div class="brand-text">
+                        <h2>Shri Ranganath Swami</h2>
+                        <p>Urban Co-operative Credit Society Ltd.</p>
+                        <span>Wani, Maharashtra</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="deposits.html">Deposits</a>
+                    <a href="loans.html">Loans</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#" class="mobile-login">Member Login</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- HERO CAROUSEL START -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="Images/banner1.png" alt="Bank Banner 1">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="Images/banner2.png" alt="Bank Banner 2">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="Images/banner3.png" alt="Bank Banner 3">
+            </div>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="carousel-btn prev" aria-label="Previous slide">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <button class="carousel-btn next" aria-label="Next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Carousel Dots -->
+        <div class="carousel-dots"></div>
+    </section>
+
+
+    <!-- ABOUT SOCIETY SECTION START -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+
+            <!-- Left Image -->
+            <div class="about-image">
+                <img src="Images/about-society.png"
+                    alt="About Our Society">
+            </div>
+
+
+            <!-- Right Content -->
+            <div class="about-content">
+                <span class="section-tag">ABOUT OUR SOCIETY</span>
+                <h2>Building Trust,<br>Growing Together</h2>
+
+                <p>
+                    Shri Ranganath Swami Urban Co-operative Credit
+                    Society Ltd. is committed to serving its members
+                    through accessible financial services and a
+                    cooperative approach.
+                </p>
+
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>Member-Focused Approach</span>
+                    </div>
+
+                    <div class="about-feature">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Trust & Transparency</span>
+                    </div>
+
+                    <div class="about-feature">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Financial Growth</span>
+                    </div>
+                </div>
+
+                <a href="about.html" class="about-btn">
+                    Know More About Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INTEREST RATES START -->
+
+    <section class="interest-section" id="interest-rates">
+        <div class="container">
+
+            <!-- SECTION HEADING -->
+            <div class="interest-heading">
+                <span class="section-tag">INTEREST RATES</span>
+
+                <h2>Explore Our Interest Rates</h2>
+
+                <p>
+                    Discover our deposit and loan interest rates
+                    and explore financial options for your needs.
+                </p>
+            </div>
+
+            <!-- TABS -->
+            <div class="interest-tabs">
+                <button class="interest-tab active" data-target="savings">
+                    Savings Account
+                </button>
+
+                <button class="interest-tab" data-target="fixed">
+                    Fixed Deposit
+                </button>
+
+                <button class="interest-tab" data-target="recurring">
+                    Recurring Deposit
+                </button>
+
+                <button class="interest-tab" data-target="loans">
+                    Loan Schemes
+                </button>
+            </div>
+
+            <!-- SAVINGS ACCOUNT -->
+            <div class="interest-content active" id="savings">
+                <div class="rate-title">
+                    <h3>Savings Account Interest Rates</h3>
+                    <span>Annual Interest Rate</span>
+                </div>
+
+                <div class="rate-table-wrapper">
+                    <table class="rate-table">
+                        <thead>
+                            <tr>
+                                <th>Account Type</th>
+                                <th>Interest Rate</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Regular Savings Account</td>
+                                <td>3.50% p.a.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Senior Citizen Savings</td>
+                                <td>4.00% p.a.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- FIXED DEPOSIT -->
+            <div class="interest-content" id="fixed">
+
+                <div class="rate-title">
+                    <h3>Fixed Deposit Interest Rates</h3>
+                    <span>Annual Interest Rate</span>
+                </div>
+
+                <div class="rate-table-wrapper"
+                    <table class="rate-table">
+                        <thead>
+                            <tr>
+                                <th>Deposit Period</th>
+                                <th>General</th>
+                                <th>Senior Citizen</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>46 - 90 Days</td>
+                                <td>4.00%</td>
+                                <td>4.50%</td>
+                            </tr>
+
+                            <tr>
+                                <td>91 - 180 Days</td>
+                                <td>5.00%</td>
+                                <td>5.50%</td>
+                            </tr>
+
+                            <tr>
+                                <td>181 - 365 Days</td>
+                                <td>6.00%</td>
+                                <td>6.50%</td>
+                            </tr>
+
+                            <tr>
+                                <td>1 - 2 Years</td>
+                                <td>7.00%</td>
+                                <td>7.50%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- RECURRING DEPOSIT -->
+            <div class="interest-content" id="recurring">
+                <div class="rate-title">
+                    <h3>Recurring Deposit Interest Rates</h3>
+                    <span>Annual Interest Rate</span>
+                </div>
+
+                <div class="rate-table-wrapper">
+                    <table class="rate-table">
+                        <thead>
+                            <tr>
+                                <th>Deposit Period</th>
+                                <th>Interest Rate</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>6 Months</td>
+                                <td>5.00% p.a.</td>
+                            </tr>
+
+                            <tr>
+                                <td>12 Months</td>
+                                <td>6.00% p.a.</td>
+                            </tr>
+
+                            <tr>
+                                <td>24 Months</td>
+                                <td>6.50% p.a.</td>
+                            </tr>
+
+                            <tr>
+                                <td>36 Months</td>
+                                <td>7.00% p.a.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- LOAN SCHEMES -->
+            <div class="interest-content" id="loans">
+
+                <div class="rate-title">
+                    <h3>Loan Interest Rates</h3>
+                    <span>Indicative Annual Interest Rate</span>
+                </div>
+
+                <div class="rate-table-wrapper">
+                    <table class="rate-table">
+                        <thead>
+                            <tr>
+                                <th>Loan Type</th>
+                                <th>Interest Rate</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Personal Loan</td>
+                                <td>12.00% p.a.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Business Loan</td>
+                                <td>13.00% p.a.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Gold Loan</td>
+                                <td>10.00% p.a.</td>
+                            </tr>
+
+                            <tr>
+                                <td>Property Loan</td>
+                                <td>11.00% p.a.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WHY CHOOSE US START -->
+    <section class="why-choose-section" id="why-choose">
+        <div class="container">
+            <div class="why-choose-heading">
+                <span class="section-tag">WHY CHOOSE US</span>
+
+                <h2>A Society Built on Trust and Relationships</h2>
+
+                <p>
+                    We believe in building lasting relationships
+                    through member-focused services, transparency
+                    and a commitment to financial well-being.
+                </p>
+            </div>
+
+            <div class="why-choose-grid">
+
+                <!-- CARD 1 -->
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <h3>Member-Centric Approach</h3>
+
+                    <p>
+                        We focus on understanding members' needs
+                        and providing financial solutions that
+                        support their goals.
+                    </p>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <h3>Trust & Transparency</h3>
+
+                    <p>
+                        We believe in clear communication,
+                        responsible practices and transparent
+                        interactions with our members.
+                    </p>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                    <h3>Simple Financial Solutions</h3>
+
+                    <p>
+                        Explore savings and financial services
+                        designed to make everyday financial
+                        planning easier.
+                    </p>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h3>Personalised Support</h3>
+
+                    <p>
+                        We value personal connections and aim
+                        to provide helpful guidance throughout
+                        your financial journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BANKING SERVICES START -->
+    <section class="services-section" id="services">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="services-heading">
+                <span class="section-tag">OUR SERVICES</span>
+
+                <h2>Financial Solutions for Every Need</h2>
+
+                <p>
+                    Explore our range of savings and financial
+                    services designed to support your goals
+                    and secure your future.
+                </p>
+            </div>
+
+
+            <!-- Services Cards -->
+            <div class="services-grid">
+
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                    </div>
+
+                    <h3>Savings Account</h3>
+
+                    <p>
+                        Develop a regular savings habit and
+                        manage your money with convenient
+                        savings solutions.
+                    </p>
+
+                    <a href="#contact" class="service-link">
+                        Know More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-vault"></i>
+                    </div>
+
+                    <h3>Fixed Deposits</h3>
+
+                    <p>
+                        Plan your future with fixed deposit
+                        options designed for disciplined
+                        long-term savings.
+                    </p>
+
+                    <a href="#contact" class="service-link">
+                        Know More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <h3>Recurring Deposits</h3>
+
+                    <p>
+                        Save a fixed amount regularly and
+                        build your savings gradually
+                        towards your financial goals.
+                    </p>
+
+                    <a href="#contact" class="service-link">
+                        Know More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+
+                    <h3>Loan Services</h3>
+
+                    <p>
+                        Explore financial assistance options
+                        for personal needs, business growth
+                        and important life goals.
+                    </p>
+
+                    <a href="#contact" class="service-link">
+                        Know More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LATEST NOTICES START -->
+    <section class="notices-section" id="notices">
+        <div class="container">
+            <div class="notices-heading">
+                <div>
+                    <span class="section-tag">LATEST UPDATES</span>
+                    <h2>News & Notices</h2>
+                    <p>
+                        Stay informed about the latest announcements
+                        and updates from our society.
+                    </p>
+                </div>
+
+                <a href="#notices" class="view-all-btn">
+                    View All
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="notices-grid">
+
+                <!-- NOTICE 1 -->
+                <div class="notice-card">
+                    <div class="notice-date">
+                        <span class="date-day">15</span>
+                        <span class="date-month">NOV</span>
+                    </div>
+
+                    <div class="notice-details">
+                        <span class="notice-category">GENERAL NOTICE</span>
+
+                        <h3>Important Member Information</h3>
+
+                        <p>
+                            Members are requested to keep their
+                            contact details and personal information
+                            updated with the society.
+                        </p>
+
+                        <a href="#contact" class="notice-link">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NOTICE 2 -->
+                <div class="notice-card">
+                    <div class="notice-date">
+                        <span class="date-day">10</span>
+                        <span class="date-month">NOV</span>
+                    </div>
+
+                    <div class="notice-details">
+                        <span class="notice-category">DEPOSIT UPDATE</span>
+
+                        <h3>Deposit Scheme Information</h3>
+
+                        <p>
+                            For information regarding available
+                            deposit schemes and applicable terms,
+                            please contact the society office.
+                        </p>
+
+                        <a href="#interest-rates" class="notice-link">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NOTICE 3 -->
+                <div class="notice-card">
+                    <div class="notice-date">
+                        <span class="date-day">05</span>
+                        <span class="date-month">NOV</span>
+                    </div>
+
+                    <div class="notice-details">
+                        <span class="notice-category">MEMBER UPDATE</span>
+
+                        <h3>Member Service Information</h3>
+
+                        <p>
+                            Members can visit the society office
+                            for assistance and information about
+                            available financial services.
+                        </p>
+
+                        <a href="#contact" class="notice-link">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--  FOOTER START  -->
+    <footer class="site-footer" id="contact">
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- COLUMN 1: ABOUT -->
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="Images/logo.png" alt="Society Logo">
+
+                    <div>
+                        <h3>श्री रंगनाथ स्वामी</h3>
+                        <span>नागरी सहकारी पतसंस्था मर्या.</span>
+                    </div>
+                </div>
+
+                <p>
+                    Building relationships through trust,
+                    transparency and member-focused financial
+                    services.
+                </p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- COLUMN 2: QUICK LINKS -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="interest-rates.html">Interest Rates</a></li>
+                    <li><a href="#notices">News & Notices</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 3: SERVICES -->
+            <div class="footer-links">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#services">Savings Account</a></li>
+                    <li><a href="#services">Fixed Deposits</a></li>
+                    <li><a href="#services">Recurring Deposits</a></li>
+                    <li><a href="#services">Loan Services</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 4: CONTACT -->
+            <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>
+                            Wani, District Yavatmal,
+                            Maharashtra, India
+                            <small>Demo address – replace with actual address.</small>
+                        </span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+910000000000">
+                            +91 00000 00000
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@example.com">
+                            info@example.com
+                        </a>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Working Hours: To be confirmed</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="footer-year"></span>
+                Shri Ranganath Swami Urban Co-operative
+                Credit Society Ltd. All Rights Reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

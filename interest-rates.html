@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interest Rates | Shri Ranganath Swami Urban Co-operative Credit Society</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-links">
+                    <a href="#">Branches</a>
+                    <a href="interest-rates.html">Interest Rates</a>
+                    <a href="notices.html">Notices</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Help & Support</a>
+
+                    <a href="#" class="login-link">
+                        <i class="fa-regular fa-user"></i>
+                        Member Login
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-navbar">
+            <div class="container navbar-container">
+
+                <a href="index.html" class="brand">
+                    <img src="Images/logo.png" alt="Society Logo">
+
+                    <div class="brand-text">
+                        <h2>Shri Ranganath Swami</h2>
+                        <p>Urban Co-operative Credit Society Ltd.</p>
+                        <span>Wani, Maharashtra</span>
+                    </div>
+                </a>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="deposits.html">Deposits</a>
+                    <a href="loans.html">Loans</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#" class="mobile-login">Member Login</a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE BANNER -->
+    <section class="rates-page-banner">
+        <div class="container">
+
+            <span>TRANSPARENT RATE INFORMATION</span>
+
+            <h1>Interest Rates</h1>
+
+            <p>
+                Explore the illustrative interest rate structure
+                for different deposit and loan categories.
+            </p>
+
+            <div class="rates-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Interest Rates</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="rates-intro-section">
+        <div class="container rates-intro-content">
+
+            <span class="section-tag">KNOW BEFORE YOU CHOOSE</span>
+
+            <h2>Interest Rate Information</h2>
+
+            <p>
+                Interest rates may vary depending on the deposit
+                period, scheme, loan category and applicable
+                terms. Please contact the society to confirm
+                the latest applicable rates.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- INTEREST RATE TABLES -->
+    <section class="rates-details-section">
+        <div class="container">
+
+            <div class="rates-section-heading">
+                <span class="section-tag">RATE DETAILS</span>
+
+                <h2>Explore Interest Rates</h2>
+
+                <p>
+                    Select a category to view its illustrative
+                    interest rate information.
+                </p>
+            </div>
+
+
+            <!-- RATE TABS -->
+            <div class="rates-tabs">
+
+                <button class="rate-tab active" data-target="savings-rates">
+                    Savings Account
+                </button>
+
+                <button class="rate-tab" data-target="fd-rates">
+                    Fixed Deposit
+                </button>
+
+                <button class="rate-tab" data-target="rd-rates">
+                    Recurring Deposit
+                </button>
+
+                <button class="rate-tab" data-target="loan-rates">
+                    Loan Schemes
+                </button>
+
+            </div>
+
+
+            <!-- SAVINGS ACCOUNT -->
+            <div class="rate-panel active" id="savings-rates">
+
+                <div class="rate-panel-heading">
+                    <div>
+                        <h3>Savings Account</h3>
+                        <p>Illustrative savings account interest rate.</p>
+                    </div>
+
+                    <span>DEPOSIT SCHEME</span>
+                </div>
+
+                <div class="rates-table-wrapper">
+                    <table class="rates-table">
+
+                        <thead>
+                            <tr>
+                                <th>Account Category</th>
+                                <th>Interest Rate (p.a.)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Savings Account</td>
+                                <td>3.00%</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+
+            <!-- FIXED DEPOSIT -->
+            <div class="rate-panel" id="fd-rates">
+
+                <div class="rate-panel-heading">
+                    <div>
+                        <h3>Fixed Deposit</h3>
+                        <p>Illustrative rates based on deposit tenure.</p>
+                    </div>
+
+                    <span>DEPOSIT SCHEME</span>
+                </div>
+
+                <div class="rates-table-wrapper">
+                    <table class="rates-table">
+
+                        <thead>
+                            <tr>
+                                <th>Deposit Period</th>
+                                <th>Interest Rate (p.a.)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>46 Days to 90 Days</td>
+                                <td>4.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>91 Days to 180 Days</td>
+                                <td>5.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>181 Days to 1 Year</td>
+                                <td>6.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>1 Year to 2 Years</td>
+                                <td>7.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Above 2 Years</td>
+                                <td>7.25%</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+
+            <!-- RECURRING DEPOSIT -->
+            <div class="rate-panel" id="rd-rates">
+
+                <div class="rate-panel-heading">
+                    <div>
+                        <h3>Recurring Deposit</h3>
+                        <p>Illustrative rates for regular deposits.</p>
+                    </div>
+
+                    <span>DEPOSIT SCHEME</span>
+                </div>
+
+                <div class="rates-table-wrapper">
+                    <table class="rates-table">
+
+                        <thead>
+                            <tr>
+                                <th>Deposit Period</th>
+                                <th>Interest Rate (p.a.)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>6 Months</td>
+                                <td>5.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>1 Year</td>
+                                <td>6.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>2 Years</td>
+                                <td>6.75%</td>
+                            </tr>
+
+                            <tr>
+                                <td>3 Years</td>
+                                <td>7.00%</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+
+            <!-- LOAN SCHEMES -->
+            <div class="rate-panel" id="loan-rates">
+
+                <div class="rate-panel-heading">
+                    <div>
+                        <h3>Loan Schemes</h3>
+                        <p>Illustrative loan interest rates.</p>
+                    </div>
+
+                    <span>LOAN SCHEME</span>
+                </div>
+
+                <div class="rates-table-wrapper">
+                    <table class="rates-table">
+
+                        <thead>
+                            <tr>
+                                <th>Loan Category</th>
+                                <th>Interest Rate (p.a.)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Personal Loan</td>
+                                <td>12.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Business Loan</td>
+                                <td>13.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Gold Loan</td>
+                                <td>10.00%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Property Loan</td>
+                                <td>11.00%</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+
+            <p class="rates-last-note">
+                * All rates shown above are fictional demonstration
+                values. Actual rates, eligibility, calculation
+                methods and applicable conditions must be confirmed
+                directly with the society.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- ENQUIRY CTA -->
+    <section class="rates-cta-section">
+        <div class="container rates-cta-content">
+
+            <div>
+                <span>NEED MORE INFORMATION?</span>
+
+                <h2>Have Questions About Interest Rates?</h2>
+
+                <p>
+                    Contact the society to enquire about
+                    applicable rates, deposit schemes and
+                    loan-related information.
+                </p>
+            </div>
+
+            <a href="contact.html">
+                Contact Us
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- COLUMN 1: ABOUT -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="Images/logo.png" alt="Society Logo">
+
+                        <div>
+                            <h3>श्री रंगनाथ स्वामी</h3>
+                            <span>नागरी सहकारी पतसंस्था मर्या.</span>
+                        </div>
+                    </div>
+
+                    <p>
+                        Building relationships through trust,
+                        transparency and member-focused financial
+                        services.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: QUICK LINKS -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="interest-rates.html">Interest Rates</a></li>
+                        <li><a href="#notices">News & Notices</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 3: SERVICES -->
+                <div class="footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Savings Account</a></li>
+                        <li><a href="#services">Fixed Deposits</a></li>
+                        <li><a href="#services">Recurring Deposits</a></li>
+                        <li><a href="#services">Loan Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 4: CONTACT -->
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                Wani, District Yavatmal,
+                                Maharashtra, India
+                                <small>Demo address – replace with actual address.</small>
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+910000000000">
+                                +91 00000 00000
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:info@example.com">
+                                info@example.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Working Hours: To be confirmed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FOOTER BOTTOM -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="footer-year"></span>
+                    Shri Ranganath Swami Urban Co-operative
+                    Credit Society Ltd. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        // Interest Rate Tabs
+        const rateTabs = document.querySelectorAll(".rate-tab");
+        const ratePanels = document.querySelectorAll(".rate-panel");
+
+        rateTabs.forEach(tab => {
+            tab.addEventListener("click", function () {
+
+                rateTabs.forEach(item => item.classList.remove("active"));
+                ratePanels.forEach(panel => panel.classList.remove("active"));
+
+                this.classList.add("active");
+
+                const targetPanel = document.getElementById(this.dataset.target);
+
+                if (targetPanel) {
+                    targetPanel.classList.add("active");
+                }
+
+            });
+        });
+    </script>
+
+</body>
+</html>
