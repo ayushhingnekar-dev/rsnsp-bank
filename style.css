@@ -4076,3 +4076,245 @@ background: #12345A;
         min-height: 250px;
     }
 }
+
+
+
+/* BRANCHES PAGE */
+.branches-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* PAGE BANNER */
+
+.branches-banner {
+    background: linear-gradient(120deg, #12345A, #07549A);
+    padding: 75px 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.branches-banner-content > span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #B8DDF8;
+}
+
+.branches-banner h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.branches-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.branches-breadcrumb a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.branches-breadcrumb i {
+    font-size: 11px;
+    color: #B8DDF8;
+}
+
+.branches-breadcrumb span {
+    color: #D6E9F8;
+}
+
+/* INTRODUCTION */
+.branches-intro {
+    padding: 65px 0 35px;
+    text-align: center;
+}
+
+.branches-label {
+    color: #07549A;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.branches-intro h2 {
+    font-family: 'Merriweather', serif;
+    color: #12345A;
+    font-size: 30px;
+    margin: 14px 0;
+}
+
+.branches-intro p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #68798A;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* BRANCH CARDS */
+.branches-section {
+    padding: 30px 0 75px;
+    background: #F5F9FC;
+}
+
+.branches-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.branch-card {
+    background: #FFFFFF;
+    padding: 28px;
+    border-radius: 10px;
+    border: 1px solid #E3EDF5;
+    box-shadow: 0 5px 20px rgba(18, 52, 90, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(18, 52, 90, 0.10);
+}
+
+.branch-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.branch-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: #EAF6FC;
+    color: #07549A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.branch-status {
+    font-size: 11px;
+    font-weight: 700;
+    color: #07549A;
+    background: #EAF6FC;
+    padding: 7px 11px;
+    border-radius: 30px;
+}
+
+.branch-card h3 {
+    color: #12345A;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.branch-location {
+    color: #68798A;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 48px;
+}
+
+.branch-location i {
+    color: #07549A;
+    margin-right: 6px;
+}
+
+.branch-divider {
+    height: 1px;
+    background: #E8EEF4;
+    margin: 20px 0;
+}
+
+.branch-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #68798A;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.branch-detail i {
+    color: #07549A;
+    margin-top: 3px;
+    width: 15px;
+    flex-shrink: 0;
+}
+
+.branch-map-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #07549A;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-top: 1px solid #E8EEF4;
+    padding-top: 18px;
+    margin-top: auto;
+}
+
+.branch-map-link:hover {
+    color: #12345A;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .branches-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .branches-container {
+    width: 92%;
+    }
+
+    .branches-banner {
+        padding: 55px 15px;
+    }
+
+    .branches-banner h1 {
+        font-size: 29px;
+    }
+
+    .branches-intro {
+        padding: 45px 0 25px;
+    }
+
+    .branches-intro h2 {
+        font-size: 24px;
+    }
+
+    .branches-intro p {
+        font-size: 14px;
+    }
+
+    .branches-section {
+        padding: 20px 0 50px;
+    }
+
+    .branches-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .branch-card {
+        padding: 23px;
+    }
+}
