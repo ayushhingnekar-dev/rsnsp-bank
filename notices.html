@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News & Notices | Shri Ranganath Swami Urban Co-operative Credit Society</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-links">
+                    <a href="branches.html">Branches</a>
+                    <a href="interest-rates.html">Interest Rates</a>
+                    <a href="notices.html">Notices</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Help & Support</a>
+                    <a href="#" class="login-link">
+                        <i class="fa-regular fa-user"></i>
+                        Member Login
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-navbar">
+            <div class="container navbar-container">
+                <a href="index.html" class="brand">
+                    <img src="Images/logo.png" alt="Society Logo">
+
+                    <div class="brand-text">
+                        <h2>Shri Ranganath Swami</h2>
+                        <p>Urban Co-operative Credit Society Ltd.</p>
+                        <span>Wani, Maharashtra</span>
+                    </div>
+                </a>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="deposits.html" class="active">Deposits</a>
+                    <a href="loans.html">Loans</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#" class="mobile-login">Member Login</a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- PAGE BANNER -->
+    <section class="notices-banner">
+        <div class="notices-container">
+            <span>LATEST UPDATES</span>
+            <h1>News & Notices</h1>
+
+            <div class="notices-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>News & Notices</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NOTICES SECTION -->
+    <section class="all-notices-section">
+
+        <div class="notices-container">
+
+            <div class="notices-heading">
+                <div>
+                    <span class="notices-label">STAY UPDATED</span>
+                    <h2>All Announcements</h2>
+                    <p>Stay informed about the latest announcements and updates from our society.</p>
+                </div>
+            </div>
+
+
+            <!-- SEARCH AND FILTER -->
+            <div class="notices-toolbar">
+
+                <div class="notices-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="noticeSearch"
+                        placeholder="Search notices...">
+                </div>
+
+                <select id="noticeCategory">
+                    <option value="all">All Categories</option>
+                    <option value="general">General Notice</option>
+                    <option value="deposit">Deposit Update</option>
+                    <option value="member">Member Update</option>
+                </select>
+
+            </div>
+
+
+            <!-- NOTICE CARDS -->
+            <div class="all-notices-grid" id="noticesGrid">
+
+                <!-- NOTICE 1 -->
+                <article class="all-notice-card" data-category="general">
+
+                    <div class="notice-date">
+                        <strong>15</strong>
+                        <span>NOV</span>
+                    </div>
+
+                    <div class="notice-content">
+                        <span class="notice-category">GENERAL NOTICE</span>
+
+                        <h3>Important Member Information</h3>
+
+                        <p>
+                            Members are requested to keep their contact details
+                            and personal information updated with the society.
+                        </p>
+
+                        <span class="notice-year">2026</span>
+                    </div>
+
+                </article>
+
+
+                <!-- NOTICE 2 -->
+                <article class="all-notice-card" data-category="deposit">
+
+                    <div class="notice-date">
+                        <strong>10</strong>
+                        <span>NOV</span>
+                    </div>
+
+                    <div class="notice-content">
+                        <span class="notice-category">DEPOSIT UPDATE</span>
+
+                        <h3>Deposit Scheme Information</h3>
+
+                        <p>
+                            For information regarding available deposit schemes
+                            and applicable terms, please contact the society office.
+                        </p>
+
+                        <span class="notice-year">2026</span>
+                    </div>
+
+                </article>
+
+
+                <!-- NOTICE 3 -->
+                <article class="all-notice-card" data-category="member">
+
+                    <div class="notice-date">
+                        <strong>05</strong>
+                        <span>NOV</span>
+                    </div>
+
+                    <div class="notice-content">
+                        <span class="notice-category">MEMBER UPDATE</span>
+
+                        <h3>Member Service Information</h3>
+
+                        <p>
+                            Members can visit the society office for assistance
+                            and information about available financial services.
+                        </p>
+
+                        <span class="notice-year">2026</span>
+                    </div>
+
+                </article>
+
+
+                <!-- NOTICE 4 -->
+                <article class="all-notice-card" data-category="general">
+
+                    <div class="notice-date">
+                        <strong>25</strong>
+                        <span>OCT</span>
+                    </div>
+
+                    <div class="notice-content">
+                        <span class="notice-category">GENERAL NOTICE</span>
+
+                        <h3>Office Working Hours</h3>
+
+                        <p>
+                            Members are requested to check the society's
+                            working hours before visiting the office.
+                        </p>
+
+                        <span class="notice-year">2026</span>
+                    </div>
+
+                </article>
+
+
+                <!-- NOTICE 5 -->
+                <article class="all-notice-card" data-category="deposit">
+
+                    <div class="notice-date">
+                        <strong>18</strong>
+                        <span>OCT</span>
+                    </div>
+
+                    <div class="notice-content">
+                        <span class="notice-category">DEPOSIT UPDATE</span>
+
+                        <h3>Fixed Deposit Enquiry</h3>
+
+                        <p>
+                            Members interested in fixed deposit facilities
+                            can contact the society office for further details.
+                        </p>
+
+                        <span class="notice-year">2026</span>
+                    </div>
+
+                </article>
+
+
+                <!-- NOTICE 6 -->
+                <article class="all-notice-card" data-category="member">
+
+                    <div class="notice-date">
+                        <strong>08</strong>
+                        <span>OCT</span>
+                    </div>
+
+                    <div class="notice-content">
+                        <span class="notice-category">MEMBER UPDATE</span>
+
+                        <h3>Member Enquiry Support</h3>
+
+                        <p>
+                            Members can contact the society office for
+                            assistance with account-related enquiries.
+                        </p>
+
+                        <span class="notice-year">2026</span>
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- COLUMN 1: ABOUT -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="Images/logo.png" alt="Society Logo">
+
+                        <div>
+                            <h3>श्री रंगनाथ स्वामी</h3>
+                            <span>नागरी सहकारी पतसंस्था मर्या.</span>
+                        </div>
+                    </div>
+
+                    <p>
+                        Building relationships through trust,
+                        transparency and member-focused financial
+                        services.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- COLUMN 2: QUICK LINKS -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="interest-rates.html">Interest Rates</a></li>
+                        <li><a href="#notices">News & Notices</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 3: SERVICES -->
+                <div class="footer-links">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#services">Savings Account</a></li>
+                        <li><a href="#services">Fixed Deposits</a></li>
+                        <li><a href="#services">Recurring Deposits</a></li>
+                        <li><a href="#services">Loan Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- COLUMN 4: CONTACT -->
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                Wani, District Yavatmal,
+                                Maharashtra, India
+                                <small>Demo address – replace with actual address.</small>
+                            </span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+910000000000">
+                                +91 00000 00000
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:info@example.com">
+                                info@example.com
+                            </a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Working Hours: To be confirmed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FOOTER BOTTOM -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="footer-year"></span>
+                    Shri Ranganath Swami Urban Co-operative
+                    Credit Society Ltd. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
