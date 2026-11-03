@@ -163,3 +163,42 @@ if (noticeSearch && noticeCategory) {
     noticeSearch.addEventListener("input", filterNotices);
     noticeCategory.addEventListener("change", filterNotices);
 }
+
+
+// HELP & SUPPORT FAQ ACCORDION
+const faqQuestions = document.querySelectorAll(".faq-question");
+faqQuestions.forEach(question => {
+    question.addEventListener("click", () => {
+
+        const currentItem = question.closest(".faq-item");
+        const isAlreadyOpen = currentItem.classList.contains("active");
+
+        // Close all FAQ items
+        document.querySelectorAll(".faq-item").forEach(item => {
+
+            item.classList.remove("active");
+
+            const icon = item.querySelector(".faq-question i");
+
+            if (icon) {
+                icon.classList.remove("fa-minus");
+                icon.classList.add("fa-plus");
+            }
+
+        });
+
+        // Open selected FAQ item
+        if (!isAlreadyOpen) {
+
+            currentItem.classList.add("active");
+
+            const icon = question.querySelector("i");
+
+            icon.classList.remove("fa-plus");
+            icon.classList.add("fa-minus");
+
+        }
+
+    });
+
+});
