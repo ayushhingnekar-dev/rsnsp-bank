@@ -120,3 +120,46 @@ if (backToTop) {
         });
     });
 }
+
+
+// NEWS & NOTICES SEARCH AND FILTER
+
+const noticeSearch = document.getElementById("noticeSearch");
+const noticeCategory = document.getElementById("noticeCategory");
+const noticeCards = document.querySelectorAll(".all-notice-card");
+const noNotices = document.getElementById("noNotices");
+
+function filterNotices() {
+    if (!noticeSearch || !noticeCategory || !noNotices) return;
+
+    const searchValue = noticeSearch.value.toLowerCase().trim();
+    const selectedCategory = noticeCategory.value;
+
+    let visibleCount = 0;
+
+    noticeCards.forEach(card => {
+
+        const cardText = card.textContent.toLowerCase();
+        const cardCategory = card.dataset.category;
+
+        const matchesSearch = cardText.includes(searchValue);
+
+        const matchesCategory =
+            selectedCategory === "all" ||
+            selectedCategory === cardCategory;
+
+        if (matchesSearch && matchesCategory) {
+            card.style.display = "flex";
+            visibleCount++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+    noNotices.style.display =
+        visibleCount === 0 ? "block" : "none";
+}
+
+if (noticeSearch && noticeCategory) {
+    noticeSearch.addEventListener("input", filterNotices);
+    noticeCategory.addEventListener("change", filterNotices);
+}
